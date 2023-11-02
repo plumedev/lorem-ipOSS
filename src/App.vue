@@ -29,11 +29,11 @@ onMounted( async function getQuotes() {
   </main>
   <div class="about">
     <h2>Pourquoi Lorem ipsum ?</h2>
-    <p>Bien sûr ! Imagine que le Lorem Ipsum soit comme les répliques hilarantes et mémorables des films OSS 117. Ces répliques, tout comme le Lorem Ipsum, peuvent remplir l'espace et ajouter une touche d'humour et d'énergie, même si le contenu réel n'est pas encore là.</p>
+    <p>Imagine que le Lorem Ipsum soit comme les répliques hilarantes et mémorables des films OSS 117. Ces répliques, tout comme le Lorem Ipsum, peuvent remplir l'espace et ajouter une touche d'humour et d'énergie, même si le contenu réel n'est pas encore là.</p>
     <p>Le Lorem Ipsum, c'est un peu comme les répliques cultes d'OSS 117 qui font rire et ajoutent du piquant aux dialogues. Ces phrases fictives, tout comme le Lorem Ipsum, permettent aux créateurs de donner un aperçu de l'apparence finale de leur projet, même avant d'y ajouter les éléments réels.</p>
     <p>Donc, le Lorem Ipsum, c'est un peu comme les punchlines mémorables d'OSS 117 dans le monde de la conception. Il ajoute ce petit quelque chose de spécial, tout en laissant place à l'imagination et à la créativité, tout comme nos aventures préférées d'OSS 117 au cinéma ! 😄</p>
   </div>
-  <footer></footer>
+  <footer>Merci à <a href="https://oss117quotes.xyz/">oss117quotes.xyz</a> pour leur API.</footer>
 </template>
 
 <style scoped>
