@@ -1,1 +1,52 @@
 @import './base.css';
+
+header {
+    min-height: 60px;
+    border-bottom: 2px var(--color-primary) solid;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+}
+
+.toggle {
+    border: 3px var(--color-primary) solid;
+    background-color: transparent;
+    height: 43px;
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7.5px;
+    padding: 0px 15px;
+}
+
+.toggle:hover,
+.toggle.selected:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.toggle.selected {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+/* .toggle input[type="radio"] {
+    display: none;
+} */
+
+input[type="radio"]:checked {
+    /* styles à appliquer lorsque l'input radio est coché */
+    border: 1px red solid;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.toggle:checked {
+    border: 1px red solid;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}

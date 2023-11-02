@@ -2,19 +2,21 @@
 
 :root {
   --color-background: #FCF7E7;
-  --color-text: #000000;
+  --color-dark: #000000;
+  --color-light: #FFFFFF;
   --color-primary: #E34711;
   --color-secondary: #E82715;
 }
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
+  color: var(--color-dark);
   background: var(--color-background);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Russo One', sans-serif;
+  margin: 0;
 }
 
 .primary {
