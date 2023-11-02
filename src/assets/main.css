@@ -2,51 +2,99 @@
 
 header {
     min-height: 60px;
+    padding: 0px 25px;
     border-bottom: 2px var(--color-primary) solid;
     width: 100%;
 }
 
-fieldset {
-    display: flex;
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-background);
 }
 
-.toggle {
+main .left {
+    padding: 75px 25px;
+    border: 2px var(--color-primary) solid;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+}
+
+main .right {
+    padding: 75px 25px;
+    border: 2px var(--color-primary) solid;
+    border-top: unset;
+    border-right: unset;
+}
+
+fieldset {
+    border-color: var(--color-primary);
+    border-style: solid;
+}
+
+input {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.25rem;
     border: 3px var(--color-primary) solid;
-    background-color: transparent;
-    height: 43px;
-    max-width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 7.5px;
+}
+
+
+select {
+    height: 47px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.25rem;
+    border: 3px var(--color-primary) solid;
+    border-left: unset;
+    padding: 0px 10px;
+}
+
+button {
+    height: 47px;
+    font-size: 1.25rem;
+    border: 3px var(--color-primary) solid;
+    font-family: 'Russo One', sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    margin: 0px 15px;
     padding: 0px 15px;
 }
 
-.toggle:hover,
-.toggle.selected:hover {
+button:hover {
     background-color: var(--color-secondary);
-    color: var(--color-light);
-    cursor: pointer;
 }
 
-.toggle.selected {
-    background-color: var(--color-primary);
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color:#fff;
+    min-height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    background-color: transparent;
+    color: var(--color-dark);
+    padding: 15px;
+    height: 60px;
+    min-width: 150px;
+}
+
+.copy:hover {
     color: var(--color-light);
 }
 
-/* .toggle input[type="radio"] {
-    display: none;
-} */
-
-input[type="radio"]:checked {
-    /* styles à appliquer lorsque l'input radio est coché */
-    border: 1px red solid;
-    background-color: var(--color-primary);
-    color: var(--color-light);
+.error {
+    color: var(--color-secondary);
+    display: inline-block;
 }
 
-.toggle:checked {
-    border: 1px red solid;
-    background-color: var(--color-primary);
-    color: var(--color-light);
+.about {
+    max-width: 1140px;
+    margin: auto;
 }
