@@ -82,7 +82,7 @@ function copyQuotes() {
     <fieldset>
       <legend>Je veux générer: </legend>
   
-      <input name="" id="" v-model="qtyToGenerate">
+      <input name="qty" id="qty" v-model="qtyToGenerate">
 
       <select v-model="selectedFormat">
         <option v-for="(format, key) in formats" :key="key">{{ format }}</option>

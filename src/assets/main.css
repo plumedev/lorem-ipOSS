@@ -4,7 +4,7 @@ header {
     min-height: 60px;
     padding: 0px 25px;
     border-bottom: 2px var(--color-primary) solid;
-    width: 100%;
+    width: calc(100vw - 67px);
 }
 
 main {
@@ -97,4 +97,53 @@ button:hover {
 .about {
     max-width: 1140px;
     margin: auto;
+    padding: 25px;
+    min-height: 35vh;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    #result {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    fieldset select {
+        border-left: 3px var(--color-primary) solid;
+        width: 50vw;
+        padding: 0;
+        margin: 15px auto;
+        box-sizing: border-box;
+        height: 47px;
+    } 
+    fieldset #qty {
+        border-left: 3px var(--color-primary) solid;
+        width: 50vw;
+        padding: 0;
+        margin: 15px auto 0px auto;
+        box-sizing: border-box;
+        height: 47px;
+    } 
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-dark);
 }
